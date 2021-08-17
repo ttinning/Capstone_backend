@@ -37,7 +37,7 @@ public class DataLoader implements ApplicationRunner {
         restaurantRepository.save(cold_town_house);
 
 
-        Restaurant elCartel = new Restaurant("El Cartel", "15-16 Teviot Pl, Edinburgh, EH1 2QZ", "0131 370 8189", CuisineType.MEXICAN, "Our own take on authentic Mexican street food serving up the best vibes in town. ", 2, "http://www.elcartelmexicana.co.uk/", "https://elcartelmexicana.co.uk/wp-content/uploads/2021/08/EL_CARTEL_TEVIOT_FOOD.pdf", "https://lh5.googleusercontent.com/p/AF1QipP71AB0ofsqcvBq-7GPNvuOQPx9bVRC8Vu6eBhU=w203-h201-k-no", "55.94559657904356", "-3.1904039372895925");
+        Restaurant elCartel = new Restaurant("El Cartel", "15-16 Teviot Pl, Edinburgh, EH1 2QZ", "0131 370 8189", CuisineType.MEXICAN, "Our own take on authentic Mexican street food serving up the best vibes in town. ", 2, "http://www.elcartelmexicana.co.uk/", "https://elcartelmexicana.co.uk/wp-content/uploads/2021/08/EL_CARTEL_TEVIOT_FOOD.pdf", "http://spoonfulofscotland.com/wp-content/uploads/2017/03/elcartel_food4-temp-1.jpg", "55.94559657904356", "-3.1904039372895925");
         restaurantRepository.save(elCartel);
 
         Restaurant theOutsiderRestaurant = new Restaurant("The Outsider Restaurant", "15 George IV Bridge, Edinburgh, EH1 1EE", "0131 226 3131", CuisineType.BRITISH, "Laid-back eating using fresh, seasonal produce in split-level space with Castle views.", 3, "http://theoutsiderrestaurant.com/", "http://www.theoutsiderrestaurant.com/", "https://lh5.googleusercontent.com/p/AF1QipP76uNsUCFr-bNA6xLwBCdPZrYuLfbdFDtDwK7W=w203-h270-k-no", "55.947919682284315", "-3.1919006140448896");
