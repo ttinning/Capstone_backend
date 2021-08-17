@@ -33,7 +33,7 @@ public class DataLoader implements ApplicationRunner {
         User user2 = new User("Not Steve", "NotStevie", "NotSteve@AOL.com");
         userRepository.save(user2);
 
-        Restaurant cold_town_house = new Restaurant("Cold Town House", "4 Grassmarket, Edinburgh, EH1 2JU", "0131 357 2865", CuisineType.ITALIAN, "Casual stop with a rooftop terrace serving pizza with creative toppings, prosecco & craft beers.", 2, "https://coldtownhouse.co.uk/", "https://coldtownhouse.co.uk/wp-content/uploads/sites/10/dlm_uploads/2020/06/Cold-Town-House-Menu-16th-July.pdf", "https://lh5.googleusercontent.com/p/AF1QipNhAyX5_jiAxyxOI6GnGzlAm8iDUts5CGMpeHR8=w203-h135-k-no", "55.947505341595736", "-3.1977799494746764");
+        Restaurant cold_town_house = new Restaurant("Cold Town House", "4 Grassmarket, Edinburgh, EH1 2JU", "0131 357 2865", CuisineType.ITALIAN, "Casual stop with a rooftop terrace serving pizza with creative toppings, prosecco & craft beers.", 2, "https://coldtownhouse.co.uk/", "https://coldtownhouse.co.uk/wp-content/uploads/sites/10/dlm_uploads/2020/06/Cold-Town-House-Menu-16th-July.pdf", "https://www.eatwalkedinburgh.co.uk/wp-content/uploads/sites/25/2019/03/IMG_4197.jpg", "55.947505341595736", "-3.1977799494746764");
         restaurantRepository.save(cold_town_house);
 
 
