@@ -23,7 +23,7 @@ public class Reservation {
     private Integer numberOfGuests;
 
     @ManyToOne
-    @JsonIgnoreProperties
+    @JsonIgnoreProperties(value="reservations")
     @JoinColumn(name = "restaurant_id", nullable = false)
     private Restaurant restaurant;
 
