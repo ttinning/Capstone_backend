@@ -1,6 +1,7 @@
 package com.codeclan.project.CapstoneBackEnd.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
@@ -22,7 +23,7 @@ public class Reservation {
     private Integer numberOfGuests;
 
     @ManyToOne
-    @JsonBackReference
+    @JsonIgnoreProperties
     @JoinColumn(name = "restaurant_id", nullable = false)
     private Restaurant restaurant;
 

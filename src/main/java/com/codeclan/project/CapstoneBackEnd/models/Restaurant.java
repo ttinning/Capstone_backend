@@ -1,6 +1,7 @@
 package com.codeclan.project.CapstoneBackEnd.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class Restaurant {
     private String getWebAddressMenu;
 
     @OneToMany(mappedBy = "restaurant", fetch = FetchType.LAZY)
-    @JsonBackReference
+    @JsonIgnoreProperties(value="restaurant")
     private List<Reservation> reservations;
 
     @Column(name = "main_image")
