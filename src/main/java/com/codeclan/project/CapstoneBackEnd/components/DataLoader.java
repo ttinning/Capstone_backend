@@ -64,7 +64,13 @@ public class DataLoader implements ApplicationRunner {
         Restaurant radiCibus = new Restaurant("radiCibus", "2 Deanhaugh St, Stockbridge, Edinburgh, EH4 1LY", "0131 285 8608", CuisineType.ITALIAN, "We are an independent italian eatery and offer traditional Italian food in a contemporary style, paying particular attention in choosing the best organic Scottish and Italian ingredients.", 4, "https://radicibus.co.uk/", "https://radicibus.co.uk/tasting-radicibus-menu/", "https://traveladestatic.imgix.net/media/image/radicibus-italian-restaurant.PNG", "55.958108358566804", "-3.2092784019389926");
         restaurantRepository.save(radiCibus);
 
-        Reservation reservation1 = new Reservation("11/08/21", "19:10", 4, cold_town_house);
+        Reservation reservation1 = new Reservation("19/08/21", "19:10", 4, cold_town_house);
         reservationRepository.save(reservation1);
+
+        Reservation reservation2 = new Reservation("19/08/21", "17:00", 2, ikagiRamen);
+        reservationRepository.save(reservation2);
+
+        Reservation reservation3 = new Reservation("19/08/21", "18:00", 3, theOutsiderRestaurant);
+        reservationRepository.save(reservation3);
     }
 }
